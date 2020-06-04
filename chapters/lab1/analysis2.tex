@@ -1,0 +1,50 @@
+Since the technique used to determine the moment of inertia is using pendulum-like technique, hence the equation of mass moment of inertia about the principal axis through centre of mass $C$ and perpendicular to the plane of the connecting rod $I_c$ can be derived from simple pendulum equation and its derivation is shown in the laboratory manuals. The equation of mass-moment of inertia is as shown below: 
+\begin{equation}\label{eq:1}
+ I_c = m \times {k_c}^2 
+\end{equation}
+Where $m$ is the mass of the connecting rod in kilograms and ${k_c}^2$ is given by:
+\begin{equation}\label{eq:2}
+k_c^2 = 0.2483 \times b \times T_B^2 - b^2
+\end{equation}
+Substituting $k_c^2$ from equation \ref{eq:2} into equation \ref{eq:1}, therefore the equation for mass moment of inertia $I_c$ becomes:
+\begin{equation}
+I_c = m \times (0.2483 \times b \times T_B^2 - b^2)
+\end{equation}
+Where $b$ is equivalent to, \begin{equation} b = \frac{L}{1 + \frac{L- 0.2483 \times T_B^2}{L - 0.2483 \times T_A^2}}\end{equation}
+To find the value both $T_A$ and $T_B$, we can use the equation given in the laboratory script. However, we firstly need to calculate the average time taken for 50 complete oscillations of each trial for both at point A and point B. The average time taken for both point A and B are shown on the table below: \\
+\input{chapters/lab1/trialave}
+Using the values above, therefore the period about a point can be calculated by summing the average time taken for 50 complete oscillations and then divide by 150. The period for oscillating at point A and B and its uncertainty are shown below:
+\[T_A= \frac{52.972 + 53.020 + 53.082}{150} = 1.06 \pm 0.01 seconds.\]
+\[T_B= \frac{47.772 + 47.49 + 47.878}{150} =  0.95\pm 0.01 seconds.\]
+
+By substituting the value of $T_A$ and $T_B$ to into equation 4, then the value of b is calculated to be:
+\[b = \frac{0.33}{1 + \frac{0.33 - 0.2483 * 0.95^2}{0.33 - 0.2483 * 1.06^2}}\]
+\[b = 0.107\]
+In addition to that, using the technique as prescribed in the error/uncertainty analysis document on Blackboard then the uncertainty of the equation 4 is given by:
+\begin{align}
+\delta b &= \pm \abs{\left(\dfrac{2L^2-2\left(T_B^2+T_A^2\right)zL+T_A^2\left(T_B^2+T_A^2\right)z^2}{\left(2L-\left(T_B^2+T_A^2\right)z\right)^2}\right)\delta L} \notag \\
+&\qquad + \abs{\left(\dfrac{2Lz(T_B^2z-L)T_A}{(zT_A^2+T_B^2z-2L)^2}\right)\delta T_A} \notag \\ 
+&\qquad + \abs{\left(-\dfrac{2Lz\left(T_A^2z-L\right)T_B}{\left(zT_B^2+T_A^2z-2L\right)^2}\right)\delta T_B} \notag
+\end{align}
+
+Where $z$ is equal to 0.2483. Substituting the value for $z$, $T_A$, $T_B$ and $L$ back into the equation above, then the equation becomes: \\
+\begin{align}
+\delta b &= \pm \abs{\left(\dfrac{2*0.33^2-2\left(0.95^2+1.06^2\right)*0.2483*0.33+1.06^2\left(0.95^2+1.06^2\right)*0.2483^2}{\left(2*0.33-\left(0.95^2+1.06^2\right)*0.2483\right)^2}\right)(0.001)} \notag \\
+&\qquad + \abs{\left(\dfrac{2*0.33*0.2483(0.95^2*0.2483-0.33)1.06}{(0.2483*1.06^2+0.95^2*0.2483-2*0.33)^2}\right)(0.01)} \notag \\ 
+&\qquad + \abs{\left(-\dfrac{2*0.33*0.2483\left(1.06^2*0.2483-0.33\right)0.95}{\left(0.2483*0.95^2+1.06^2*0.2483-2*0.33\right)^2}\right)(0.01)} \notag \\
+&=  0.0010608154258371118 + 0.007471491405688022 + 0.003225131996229406 \notag \\
+&= 0.012 \notag \\
+b &= 0.107 \pm 0.012 \notag
+\end{align}
+
+Substituting the value of $b$ into equation 2 and applying the same technique to calculate uncertainty, then the mass moment of inertia of the object and its uncertainty values calculated to be:
+\begin{align}
+I_c &= 2.65(0.2483 * 0.107 * 0.95^2 - 0.0.7^2) \notag \\
+&= 0.033 kg.m^2 \notag \\
+\delta I_c &= \abs{\left(0.2483*b*T_B^2-b^2\right)(\delta m)} + \abs{\left(m(0.2483*T_B^2-2b)\right)(\delta b)} \notag \\
+&\qquad + \abs{(2*0.2483*b*m*T_B)(\delta T_B)} \notag \\
+&= \abs{\left(0.2483*0.107*0.95^2-0.107^2\right)(0.1)} + \abs{\left(2.65(0.2483*0.95^2-2*0.107)\right)(0.012)} \notag \\
+&\qquad + \abs{(2*0.2483*0.107*2.65*0.95)(0.01)} \notag \\
+&= 0.003 \notag \\
+I_c &= 0.033 \pm 0.003 kg.m^2 \notag 
+\end{align}

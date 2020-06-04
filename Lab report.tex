@@ -1,0 +1,208 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[
+left=2.5cm, right=4cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{physics}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{caption}
+\usepackage{hyperref}
+\restylefloat{table}
+\setlength{\parindent}{0pt}
+\begin{document}
+\raggedbottom
+\onehalfspacing
+
+\title{Machine Dynamics (MCEN2003) \\  Laboratory Report}
+\author{Dicky Larson Gultom \\ 19487537 \\}
+\date{\today}
+\maketitle
+
+\newpage
+\pagenumbering{roman}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+The purpose of this document is to analyse the experimental data that are provided by the lecturer for all three experiments: mass moment of inertia of a piston, belt friction and epicyclic gear velocity ratio. \\
+
+The first problem this document attempt to solve is to determine the mass moment of inertia of a piston using two commonly used laboratory method to determine the mass moment of inertia of an object; the compound pendulum method and the trifilar suspension method. In addition to determining the mass moment inertia of the piston, this laboratory report also explore which method will gives the most accurate result based on uncertainty. The second problem is to determine the coefficient of friction of a belt using coil rig configuration and vee-belt configuration. Lastly, the last problem is to determine the velocity ratio between the input and the output while locking either the carrier arm, the sun gear and the annulus or ring gear.\\
+
+The results shows that for the first experiment (mass moment of inertia experiment), the trifilar method will yield the most accurate mass moment inertia because it has the lowest final uncertainty with approximately $2\%$ compared to compound pendulum method with $9\%$. For the second experiment, the result shows that the coil rig configuration has a lower coefficient of friction $\mu$ value compared to vee belt configuration. Lastly, the final results for the epicyclic gear experiment show the ratio between the sun gear and the annulus gear when the carrier arm is fixed is 3 to 1, 4 to 1 for the ratio between the sun and the carrier arm when the annulus gear is fixed and lastly 3 to 4 for the ratio between the carrier arm and the annulus gear when the sun gear is fixed. 
+
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\chapter*{Nomenclature.}
+\addcontentsline{toc}{chapter}{Nomenclature.}
+\input{nomenclature}
+\cleardoublepage
+
+\pagenumbering{arabic}
+
+\section*{1.0 Introduction.}
+\addcontentsline{toc}{chapter}{1.0 Introduction.}
+\input{chapters/introduction}
+
+\section*{2.0 Mass Moment of Inertia Estimation.}
+\addcontentsline{toc}{chapter}{2.0 Mass Moment of Inertia Estimation.}
+\input{chapters/lab1/introlab1}
+
+\subsection*{2.1 Analysis of Compound Pendulum Method.}
+\addcontentsline{toc}{section}{2.1 Analysis of Compound Pendulum Method.}
+\input{chapters/lab1/analysis21}
+
+\input{chapters/lab1/results}
+
+\hspace{0pt}\input{chapters/lab1/analysis2}
+\subsection*{2.2 Analysis of Trifilar Suspension Method.}
+\input{chapters/lab1/method2}
+\addcontentsline{toc}{section}{2.2 Analysis of Trifilar Suspension Method.}
+
+\subsection*{2.3 Discussion.}
+\addcontentsline{toc}{section}{2.2 Discussion.}
+\input{chapters/lab1/discussion}
+
+\section*{3.0 Belt Friction.}
+\addcontentsline{toc}{chapter}{3.0 Belt Friction.}
+\input{chapters/lab2/intro}
+
+\subsection*{3.1 Analysis of Coil Friction Experiment.}
+\addcontentsline{toc}{section}{3.1 Analysis of Coil Friction Experiment.}
+
+\input{chapters/lab2/method1}
+
+\subsection*{3.2 Analysis of V-Belft Friction Experiment.}
+\addcontentsline{toc}{section}{3.2 Analysis of V-Belt Friction Experiment.}
+\input{chapters/lab2/method2}
+\subsection*{3.3 Discussion.}
+\addcontentsline{toc}{section}{3.3 Discussion.}
+\input{chapters/lab2/discussion}
+
+\section*{4.0 Epicyclic Gear.}
+\addcontentsline{toc}{chapter}{4.0 Epicyclic Gear.}
+\input{chapters/lab3/lab3intro}
+\subsection*{4.1 Speed Ratio Analysis for Fixed Carrier Arm.}
+\addcontentsline{toc}{section}{4.1 Speed Ratio Analysis for Fixed Carrier Arm.}
+\input{chapters/lab3/part1}
+\subsection*{4.2 Speed Ratio Analysis for Fixed Annulus Gear.}
+\addcontentsline{toc}{section}{4.2 Speed Ratio Analysis for Fixed Annulus Gear.}
+\input{chapters/lab3/part2}
+\subsection*{4.3 Speed Ratio Analysis for Fixed Sun Gear.}
+\addcontentsline{toc}{section}{4.3 Speed Ratio Analysis for Fixed Sun Gear.}
+\input{chapters/lab3/part3}
+\section*{5.0 Conclusion}
+\addcontentsline{toc}{chapter}{5.0 Conclusion.}
+The goal of the experiments is to analyse for each experiment the experimental results gathered using theoretical knowledge gained from the lecture slides as well as formulae or equations that were included in the laboratory script. The methods used for the first experiment were the compound pendulum method and the trifilar suspension method. The method use for the second
+experiment was to add mass to the slack side of the belt and then add small amount of mass to the tight side of the belt until the belt starts to slip. Lastly, the method used for the third experiment was the tabular method to determine the speed ratio between the input and the output.\\
+
+The moment of inertia of the object from the first experiment comes out to be 0.035 $kg.m^2$ with uncertainty of approximately 2$\%$ using the trifilar method and 0.033 $kg.m^2$ with uncertainty of approximately $9\%$ using the compound pendulum method. For the second experiment, the coefficient of friction $\mu$ comes out to be 0.884 for the coil belt and 0.716 for the vee-belt configuration. Lastly, the speed ratio when the carrier arm is fixed is 3 to 1, 4 to 1 when the annulus or ring gear is fixed and 3 to 4 when the sun gear is fixed.\\
+
+The first experiment is considered to be successful because the uncertainty calculated is less than $10\%$. In addition to that, the second experiment is also considered to be successful because based on the $R^2$ value, the experimental data represent $99\%$ and above $70\%$ of the linear regression line. 
+\pagebreak
+\section*{6.0 References.}
+\addcontentsline{toc}{chapter}{6.0 References.}
+\input{references}
+\appendix
+\section*{7.0 Appendices.}
+\addcontentsline{toc}{chapter}{7.0 Appendices.}
+\subsection*{7.1 Moment of Inertia Laboratory Script.}
+\addcontentsline{toc}{section}{7.1 Moment of Inertia Laboratory Script.}
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{lab1/lab1-1}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+ \includegraphics[width=\linewidth]{lab1/lab1-2}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+ \includegraphics[width=\linewidth]{lab1/lab1-3}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+ \includegraphics[width=\linewidth]{lab1/lab1-4}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+ \includegraphics[width=\linewidth]{lab1/lab1-5}
+  \caption*{}
+\label{}
+\end{figure}
+
+\subsection*{7.2  Experimental Results for Moment of Inertia Experiment.}
+\addcontentsline{toc}{section}{7.2  Experimental Results for Moment of Inertia Experiment.}
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{dataset/mass1}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+  \includegraphics[width=\linewidth]{dataset/mass2}
+  \caption*{}
+\label{}
+\end{figure}
+
+\subsection*{7.3 Belt Friction Laboratory Script.}
+\addcontentsline{toc}{section}{7.3 Belt Friction Laboratory Script.}
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{lab2/lab2-1}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}[H]
+ \includegraphics[width=\linewidth]{lab2/lab2-2}
+  \caption*{}
+\label{}
+\end{figure}
+
+\subsection*{7.4  Experimental Results for Belt Friction Experiment.}
+\addcontentsline{toc}{section}{7.2  Experimental Results for Belt Friction Experiment.}
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{dataset/belt}
+  \caption*{}
+\label{}
+\end{figure}
+
+\subsection*{7.5 Epicylic Gears Laboratory Script.}
+\addcontentsline{toc}{section}{7.5 Epicylic Gears Laboratory Script.}
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{lab3/lab3-1}
+  \caption*{}
+\label{}
+\end{figure}
+
+\subsection*{7.6 Error Analysis.}
+\addcontentsline{toc}{section}{7.6 Error Analysis.}
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{error/e1}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+  \includegraphics[width=\linewidth]{error/e2}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+  \includegraphics[width=\linewidth]{error/e3}
+  \caption*{}
+\label{}
+\end{figure}
+\begin{figure}
+  \includegraphics[width=\linewidth]{error/e4}
+  \caption*{}
+\label{}
+\end{figure}
+
+\end{document}

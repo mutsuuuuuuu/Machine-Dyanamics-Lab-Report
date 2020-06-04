@@ -1,0 +1,25 @@
+In this section of experiment, vee-belt is used and in order to determine the coefficient of friction $\mu$, we start varying the tension on the slack side $T_2$ and then find the corresponding tension on the tight side $T_1$ until the belt starts to slip while maintaining a constant angle of lap $\theta$ to be $40\degree$ and $\alpha$ of $38\degree$. The results of the experiments are shown on the table below.
+\input{chapters/lab2/m2results}
+
+Multiplying the mass by the acceleration due to gravity and applying the same uncertainty equation as experiment above, then the tension for both the slack side and the tight side are given on the table below:
+\input{chapters/lab2/m2tension}
+
+The graph of $T_2$ versus $T_1$ is shown below:
+\input{chapters/lab2/m2g1}
+
+The line of best fit of above graph has a gradient of 1.9601. To deduce $\mu$, we must calculate $\mu '$ first. Rearranging equation 6 to find $\mu '$, then $\mu'$ is given by:
+\begin{align}
+\mu ' &= \frac{1}{\theta}\ln\left(\frac{\delta T_1}{\delta T_2}\right) \notag
+\end{align}
+Where $\frac{\delta T_1}{\delta T_2}$ is equal to the gradient of the line of best fit above. Substituting all the required value into above equation, then $\mu '$ value to three significant figures calculated to be:
+\begin{align}
+\mu ' &= \frac{180}{40\pi}\ln\left(1.9601\right) \notag \\
+\qquad &= 7.57\times10^{-1} \notag
+\end{align}
+
+Substituting the value of $\mu '$ and $\alpha$ into equation 7, then the $\mu$ to three significant is given by:
+\begin{align}
+\mu &= \mu ' * \cos(0.5\alpha) \notag \\
+\qquad &= 0.757* \cos(0.5*\frac{38\pi}{180}) \notag \\
+\qquad &=  0.716 \notag
+\end{align}

@@ -1,0 +1,26 @@
+In this part of experiment, coil friction rig configuration is used and it will be used to calculate the coefficient of friction by varying the angle of lap. In addition to that, the slack tension is constant with 0.9 kg of mass and we keep increasing the load on the tight side until the coil belt starts to slip. The measurement experiment reading are shown on the table below:\\
+\input{chapters/lab2/coilresults}
+
+According to the laboratory script, the ratio between natural logarithm of the tension side $\ln(T_1)$ and the natural logarithm of the slack side $\ln(T_2)$ is constant and it is equal to the product of the lap angle $\theta$ and the coefficient of friction $\mu$. Therefore, it is a linear relationship between tension side $\ln(T_1)$ and  slack side $\ln(T_2)$ and the linear equation is:
+\begin{equation}
+\ln(T_1) = \mu\theta + \ln(T_2)
+\end{equation}
+The tension force on each side is equal to the weight force $F_g$ and it is given by $m*g$ where $m$ is the mass of the object and $g$ is the acceleration due to gravity. Since we conduct this experiment on the same location as the moment of inertia experiment, then we can use the same value for the acceleration due to gravity. In addition to that, the uncertainty to tension force of is given by:
+\begin{align}
+\delta T&=\pm \abs{\left(g\right)(\delta m)} + \abs{\left(m\right)(\delta g)} \notag
+\end{align}
+The tension for both the slack side and the tight side are given on the table below:
+\input{chapters/lab2/m1tension}
+
+Taking the natural logarithm for both $T_2$ and $T_1$, then:
+\input{chapters/lab2/lnm1}
+
+Plotting the equilibrium values of $\ln(T_1)$ versus $\theta$ and setting the intercept to 2.78, the outputted graph is shown below:
+ \input{chapters/lab2/m1g1}
+Drawing the line of best fit from the y-intercept then the equation of the line in terms of $\theta$ and $\ln(T_1)$ is given by:
+\begin{equation}
+\ln(T_1) = 0.0884\theta + 2.78 
+\end{equation}
+
+Therefore, the coefficient of friction $\mu$ is approximately 0.0884.
+
